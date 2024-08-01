@@ -1,24 +1,25 @@
-# README
+# LinkTree Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Creations commands
 
-Things you may want to cover:
+- Create Controller-View
 
-* Ruby version
+```
+rails g controller <name> <functionName>
+```
 
-* System dependencies
+- Create SCAFFOLD -> crear all the views & controllers for a CRUD (Create, Read, Update, Delete)
 
-* Configuration
+```
+rails g scaffold <name> <attribute:type> <attribute:type>...
+```
 
-* Database creation
+- Then run
 
-* Database initialization
+```
+rails db:migrate
+```
 
-* How to run the test suite
+## Gems
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Devise for authentication: https://rubygems.org/gems/devise
