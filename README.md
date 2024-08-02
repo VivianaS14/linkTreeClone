@@ -23,3 +23,7 @@ rails db:migrate
 ## Gems
 
 - Devise for authentication: https://rubygems.org/gems/devise
+
+## Files
+
+- To create a partial file, for example a navigation bar, you need to create with an underscore before the name: `_navbar.html.erb`
