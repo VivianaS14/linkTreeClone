@@ -8,7 +8,7 @@
 rails g controller <name> <functionName>
 ```
 
-- Create SCAFFOLD -> crear all the views & controllers for a CRUD (Create, Read, Update, Delete)
+- Create SCAFFOLD -> create model, view & controller for a CRUD (Create, Read, Update, Delete)
 
 ```
 rails g scaffold <name> <attribute:type> <attribute:type>...
