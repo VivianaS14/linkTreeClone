@@ -1,10 +1,23 @@
-<h1>Hello World</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-Ooogie boogie
+<%= stylesheet_link_tag "trees" %>
+
 
 <%# To run ruby %>
 <%# This is the buttom show in page %>
-<%= link_to "Tress", trees_path %>
+<%# <%= link_to "Tress", trees_path, class: "button-1" %> 
 
-<p>Add a New Tree</p>
-<%= link_to "New Tree", new_tree_path %>
+<%# if current_user %>
+    <%#= link_to "View my Tree", current_user.tree, class: "button-1" %>
+<%# end %>
+
+<div class="container">
+  <h1>Welcome to LinkTree Clone!</h1>
+  <% if user_signed_in?%>
+    <% if current_user.tree.present? %>
+      <%= link_to "View my tree", current_user.tree, class: "button-1" %>
+    <% else %>
+        <%= link_to "Create your own Link Tree", new_tree_path, class: "button-1" %>
+    <% end %>
+  <% else %>
+    <%= link_to "Create your own Link Tree",  new_user_registration_path, class:"button-1", target: "_blank"%>
+  <% end %>
+</div>
